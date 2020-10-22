@@ -34,9 +34,11 @@ function draw() {
     a+=0.1;
     
     //Gostaria de fazer o mouse controlar a altura do pendulo.
+    function mousePressed() {
     if(mouseIsPressed) {
       pendulum.mass(mouseX, mouseY);
     }
   }
+  mousePressed();
   pendulum();
 }
